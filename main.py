@@ -28,3 +28,15 @@ if "dom_content" in st.session_state:
             dom_chunks = split_dom_content(st.session_state.dom_content)
             result = parse_with_ollama(dom_chunks,parse_discription)
             st.write(result)
+            
+            
+hide_st_asset = '''
+<style>
+{
+    #mainMenu{visibility:hidden;}
+    footer{visibility:hidden;}
+}
+</style>
+'''
+
+st.markdown(hide_st_asset,unsafe_allow_html=True)
