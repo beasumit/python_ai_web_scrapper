@@ -26,8 +26,8 @@ def scrape_website(website):
         })
         print('Captcha Solve Status:',solve_res['value']['status'])
         print("------"*10)
-        # print('Taking page screenshot to file page.png')
-        # driver.get_screenshot_as_file('./page.png')
+        print('Taking page screenshot to file page.png')
+        driver.get_screenshot_as_file('./page.png')
         print('Navigated! Scraping page content...')
         html = driver.page_source
         print(html)
