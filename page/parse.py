@@ -1,6 +1,6 @@
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
-
+# import replicate
 #template
 
 template = (
@@ -12,8 +12,6 @@ template = (
     "4. **Direct Data Only:** Your output should contain only the data that is explicitly requested, with no other text."
 )
 
-
-#model
 model = OllamaLLM(model="llama3")
 
 
