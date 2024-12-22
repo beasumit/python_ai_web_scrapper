@@ -12,6 +12,10 @@ template = (
     "4. **Direct Data Only:** Your output should contain only the data that is explicitly requested, with no other text."
 )
 
+#replicate api model for llama3
+# model = replicate.models.get("meta/meta-llama-3-70b-instruct")
+# version = model.versions.get()
+
 model = OllamaLLM(model="llama3")
 
 
